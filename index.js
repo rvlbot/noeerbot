@@ -587,7 +587,7 @@ client.on('group-participants-update', async (anu) => {
 								fs.unlinkSync(ranp)
 								if (err) return reply(mess.error.stick)
 								buff = fs.readFileSync(ranw)
-								client.sendMessage(from, buff, sticker, {quoted: mek})
+								client.sendMessage(from,buff,sticker,{quoted:mek})
 							})
 						})					
 					} else {
